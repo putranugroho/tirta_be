@@ -25,7 +25,7 @@ app.get("/",(req,res,next)=>{
     res.end(JSON.stringify(`Welcome to Putra Nugroho [Absensi] RestAPI port : ${port}`))
 })
 
-app.post("/",(req,res,next)=>{
+app.post("/check_saldo",(req,res,next)=>{
 
     const clientID = "ATMPNN"
     const ClientSecret = `52TK3zfB")feeX};`
