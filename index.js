@@ -21,6 +21,10 @@ var sha256 = function (signature,secret_key) {
     
 }
 
+app.get("/",(req,res,next)=>{
+    res.end(JSON.stringify(`Welcome to Putra Nugroho [Absensi] RestAPI port : ${port}`))
+})
+
 app.post("/",(req,res,next)=>{
 
     const clientID = "ATMPNN"
